@@ -1,0 +1,5 @@
+#include "claw.dtsi"
+
+&default_transform {
+	col-offset = <18>;
+};

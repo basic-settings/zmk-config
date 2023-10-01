@@ -1,0 +1,16 @@
+if SHIELD_CLAW_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Claw"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_CLAW_LEFT || SHIELD_CLAW_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
