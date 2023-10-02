@@ -1,0 +1,149 @@
+layers:
+  default:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - '&td_u'
+  - I
+  - '&td_o'
+  - P
+  - '&td_mt_a'
+  - '&td_mt_s'
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHIFT}
+  - G
+  - H
+  - {t: J, h: RSHIFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RALT}
+  - {t: ;, h: RGUI}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ESC, h: left}
+  - SPACE
+  - TAB
+  - ENTER
+  - BSPC
+  - {t: DEL, h: right}
+  right:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - ''
+  - ''
+  - PSCRN
+  - LARW
+  - DARW
+  - UARW
+  - RARW
+  - PG UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - INS
+  - HOME
+  - ''
+  - ''
+  - END
+  - PG DN
+  - {t: ESC, h: left}
+  - SPACE
+  - TAB
+  - ENTER
+  - BSPC
+  - {t: DEL, h: right, type: held}
+  left:
+  - '!'
+  - '@'
+  - '['
+  - ']'
+  - ''''
+  - '='
+  - <
+  - '>'
+  - '#'
+  - ':'
+  - \
+  - /
+  - '{'
+  - '}'
+  - '"'
+  - '-'
+  - (
+  - )
+  - _
+  - ;
+  - '|'
+  - '%'
+  - '`'
+  - '~'
+  - '*'
+  - +
+  - ^
+  - $
+  - '&'
+  - '?'
+  - {t: ESC, h: left, type: held}
+  - SPACE
+  - TAB
+  - ENTER
+  - BSPC
+  - {t: DEL, h: right}
+  tri:
+  - F1
+  - F2
+  - F3
+  - F4
+  - {t: BT, h: '0'}
+  - {t: BT, h: '2'}
+  - OUT TOG
+  - ''
+  - MUTE
+  - NEXT
+  - F5
+  - F6
+  - F7
+  - F8
+  - {t: BT, h: '1'}
+  - {t: BT, h: '3'}
+  - BRI UP
+  - ''
+  - VOL UP
+  - PP
+  - F9
+  - F10
+  - F11
+  - F12
+  - BT CLR
+  - {t: BT, h: '4'}
+  - BRI DEC
+  - ''
+  - VOL DN
+  - PREV
+  - {t: ESC, h: left, type: held}
+  - SPACE
+  - TAB
+  - ENTER
+  - BSPC
+  - {t: DEL, h: right, type: held}
