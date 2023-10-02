@@ -10,8 +10,8 @@ layers:
   - I
   - '&td_o'
   - P
-  - '&td_mt_a'
-  - '&td_mt_s'
+  - '&td_a'
+  - '&td_s'
   - {t: D, h: LCTRL}
   - {t: F, h: LSHIFT}
   - G
