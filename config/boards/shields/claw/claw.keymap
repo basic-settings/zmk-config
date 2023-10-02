@@ -59,7 +59,7 @@
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAP_DANCE_MOD_TAP_A";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <50>;
 			bindings = <&mt LGUI A>, <&ma_a>;
 		};
 
@@ -67,21 +67,21 @@
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAP_DANCE_MOD_TAP_S";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <50>;
 			bindings = <&mt LALT S>, <&ma_s>;
 		};
 		td_u: tap_dance_u {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAP_DANCE_U";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <50>;
 			bindings = <&kp U>, <&ma_u>;
 		};
 		td_o: tap_dance_o {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAP_DANCE_O";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <50>;
 			bindings = <&kp O>, <&ma_o>;
 		};
 	};
