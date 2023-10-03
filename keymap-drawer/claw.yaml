@@ -12,14 +12,14 @@ layers:
   - P
   - A
   - S
-  - {t: D, h: LCTRL}
-  - {t: F, h: LSHIFT}
+  - '&ht_bl LCTRL D'
+  - '&ht_bl LSHIFT F'
   - G
   - H
-  - {t: J, h: RSHIFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RALT}
-  - {t: ;, h: RGUI}
+  - '&ht_bl RSHIFT J'
+  - '&ht_bl RCTRL K'
+  - '&ht_bl RALT L'
+  - '&ht_bl RGUI SEMI'
   - Z
   - X
   - C
