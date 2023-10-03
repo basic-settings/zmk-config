@@ -6,12 +6,12 @@ layers:
   - R
   - T
   - Y
-  - '&td_u'
+  - U
   - I
-  - '&td_o'
+  - '&kp'
   - P
-  - '&td_a'
-  - '&td_s'
+  - A
+  - S
   - {t: D, h: LCTRL}
   - {t: F, h: LSHIFT}
   - G
