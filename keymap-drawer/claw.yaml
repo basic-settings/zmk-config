@@ -42,16 +42,16 @@ layers:
   - '3'
   - '4'
   - '5'
+  - MUTE
+  - STOP
+  - PREV
+  - PP
+  - NEXT
   - '6'
   - '7'
   - '8'
   - '9'
   - '0'
-  - ''
-  - ''
-  - ''
-  - ''
-  - PSCRN
   - LARW
   - DARW
   - UARW
@@ -60,7 +60,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - PSCRN
   - INS
   - HOME
   - ''
