@@ -18,7 +18,7 @@ layers:
   - H
   - {t: J, h: RSHIFT}
   - {t: K, h: RCTRL}
-  - {t: L, h: RALT}
+  - {t: L, h: LALT}
   - {t: ;, h: RGUI}
   - Z
   - X
