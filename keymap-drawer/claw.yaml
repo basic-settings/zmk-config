@@ -63,8 +63,8 @@ layers:
   - PSCRN
   - INS
   - HOME
-  - ''
-  - ''
+  - VOL DN
+  - VOL UP
   - END
   - PG DN
   - {t: ESC, h: left}
