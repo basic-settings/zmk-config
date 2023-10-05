@@ -12,85 +12,15 @@
 #define TRI 3
 
 / {
-	macros {
-		ma_a: macro_a {
-			label = "MACRO_A";
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings
-			    = <&macro_press &kp RALT>
-			    , <&macro_tap &kp Q>
-			    , <&macro_release &kp RALT>
-			    ;
-		};
-		ma_s: macro_s {
-			label = "MACRO_S";
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings
-			    = <&macro_press &kp RALT>
-			    , <&macro_tap &kp S>
-			    , <&macro_release &kp RALT>
-			    ;
-		};
-		ma_u: macro_u {
-			label = "MACRO_U";
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings
-			    = <&macro_press &kp RALT>
-			    , <&macro_tap &kp Y>
-			    , <&macro_release &kp RALT>
-			    ;
-		};
-		ma_o: macro_o {
-			label = "MACRO_O";
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings
-			    = <&macro_press &kp RALT>
-			    , <&macro_tap &kp P>
-			    , <&macro_release &kp RALT>
-			    ;
-		};
-	};
 	behaviors {
-		td_a: tap_dance_mod_tap_a {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAP_DANCE_MOD_TAP_A";
-			#binding-cells = <0>;
-			tapping-term-ms = <50>;
-			bindings = <&mt LGUI A>, <&ma_a>;
-		};
-
-		td_s: tap_dance_mod_tap_s {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAP_DANCE_MOD_TAP_S";
-			#binding-cells = <0>;
-			tapping-term-ms = <50>;
-			bindings = <&mt LALT S>, <&ma_s>;
-		};
-		td_u: tap_dance_u {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAP_DANCE_U";
-			#binding-cells = <0>;
-			tapping-term-ms = <50>;
-			bindings = <&kp U>, <&ma_u>;
-		};
-		td_o: tap_dance_o {
-			compatible = "zmk,behavior-tap-dance";
-			label = "TAP_DANCE_O";
-			#binding-cells = <0>;
-			tapping-term-ms = <50>;
-			bindings = <&kp O>, <&ma_o>;
-		};
-		ht_bl: hold_tap_balanced {
+        ht_bl: hold_tap_balanced {
 		    compatible = "zmk,behavior-hold-tap";
 		    label = "HOLD_TAP_BAL";
 		    #binding-cells = <2>;
-		    flavor = "balanced";
-		    tapping-term-ms = <200>;
-		    quick-tap-ms = <200>;
+		    flavor = "tap-preferred";
+		    tapping-term-ms = <250>;
+		    quick-tap-ms = <100>;
+		    require-prior-idle-ms = <125>;
 		    bindings = <&kp>, <&kp>;
 		};
 	};
@@ -132,7 +62,7 @@
 				        &kp N6            &kp N7            &kp N8            &kp N9          &kp N0             &kp C_STOP         &kp LARW         &kp DARW         &kp RARW         &kp PG_UP
 				//├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤   ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤
 				//│                │                │                │                │     INSERT     │   │      HOME      │                │                │       END      │     PAGE DN    │
-				       &none             &none            &none            &kp PSCRN            &kp INS             &kp HOME          &none            &none           &kp END          &kp PG_DN
+				       &none             &none            &none            &kp PSCRN            &kp INS             &kp HOME          &kp C_VOL_DN            &kp C_VOL_UP          &kp END          &kp PG_DN
 				//╰────────────────┴────────────────┼────────────────┼────────────────┼────────────────┤   ├────────────────┼────────────────┼────────────────┼────────────────┴────────────────╯
 								       &lt LEF ESC        &kp SPACE         &kp TAB            &kp ENTER         &kp BSPC        &lt RIG DEL
 				//             			    ╰────────────────┴────────────────┴────────────────╯   ╰────────────────┴────────────────┴────────────────╯
