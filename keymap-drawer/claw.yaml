@@ -117,7 +117,7 @@ layers:
   - F4
   - {t: BT, h: '0'}
   - {t: BT, h: '2'}
-  - OUT TOG
+  - OUT BLE
   - ''
   - MUTE
   - NEXT
