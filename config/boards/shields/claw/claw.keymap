@@ -13,8 +13,8 @@
 / {
 
         macros {
-                ma_c: macro_c {
-                        label = "MACRO_C";
+                ma_c: ma_c {
+                        #label = "MACRO_C";
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
                         bindings
@@ -23,8 +23,8 @@
                             , <&macro_release &kp LCTRL>
                             ;
                 };
-                ma_v: macro_v {
-                        label = "MACRO_V";
+                ma_v: ma_v {
+                        #label = "MACRO_V";
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
                         bindings
@@ -38,7 +38,7 @@
 	behaviors {
 		ht_bl: hold_tap_balanced {
 			    compatible = "zmk,behavior-hold-tap";
-			    label = "HOLD_TAP_BAL";
+			    #label = "HOLD_TAP_BAL";
 			    #binding-cells = <2>;
 			    flavor = "tap-preferred";
 			    tapping-term-ms = <200>;
@@ -48,17 +48,15 @@
 			};
 		td_c: tap_dance_c {
 			    compatible = "zmk,behavior-tap-dance";
-			    label = "TAP_DANCE_C";
-			    #binding-cells = <2>;
-			    tapping-term-ms = <100>;
-			    bindings = <&kp C>, <&kp C>, <&ma_c>;
+			    #binding-cells = <0>;
+			    tapping-term-ms = <200>;
+			    bindings = <&kp C>, <&ma_c>;
 			};
 		td_v: tap_dance_v {
 			    compatible = "zmk,behavior-tap-dance";
-			    label = "TAP_DANCE_V";
-			    #binding-cells = <2>;
-			    tapping-term-ms = <100>;
-			    bindings = <&kp V>, <&kp V>, <&ma_v>;
+			    #binding-cells = <0>;
+			    tapping-term-ms = <200>;
+			    bindings = <&kp V>, <&ma_v>;
 			};
 	};
 
