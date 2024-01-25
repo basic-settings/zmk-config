@@ -22,8 +22,8 @@ layers:
   - {t: ;, h: RGUI}
   - Z
   - X
-  - C
-  - V
+  - '&td_c'
+  - '&td_v'
   - B
   - N
   - M
