@@ -51,14 +51,14 @@
 			    label = "TAP_DANCE_C";
 			    #binding-cells = <2>;
 			    tapping-term-ms = <100>;
-			    bindings = <&kp C>, <&ma_c>;
+			    bindings = <&kp C>, <&kp C>, <&ma_c>;
 			};
 		td_v: tap_dance_v {
 			    compatible = "zmk,behavior-tap-dance";
 			    label = "TAP_DANCE_V";
 			    #binding-cells = <2>;
 			    tapping-term-ms = <100>;
-			    bindings = <&kp V>, <&ma_v>;
+			    bindings = <&kp V>, <&kp V>, <&ma_v>;
 			};
 	};
 
