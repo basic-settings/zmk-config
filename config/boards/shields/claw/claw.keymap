@@ -50,13 +50,13 @@
 			    compatible = "zmk,behavior-tap-dance";
 			    #binding-cells = <0>;
 			    tapping-term-ms = <200>;
-			    bindings = <&kp C>, <&ma_c>;
+			    bindings = <&kp C>, <&kp C>, <&ma_c>;
 			};
 		td_v: tap_dance_v {
 			    compatible = "zmk,behavior-tap-dance";
 			    #binding-cells = <0>;
 			    tapping-term-ms = <200>;
-			    bindings = <&kp V>, <&ma_v>;
+			    bindings = <&kp V>, <&kp V>, <&ma_v>;
 			};
 	};
 
