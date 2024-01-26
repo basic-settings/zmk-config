@@ -116,7 +116,7 @@ layers:
   - F3
   - F4
   - {t: BT, h: '0'}
-  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
   - SLEEP
   - ''
   - MUTE
@@ -126,7 +126,7 @@ layers:
   - F7
   - F8
   - {t: BT, h: '1'}
-  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - BRI UP
   - ''
   - VOL UP
@@ -135,10 +135,10 @@ layers:
   - F10
   - F11
   - F12
-  - BT CLR
-  - {t: BT, h: '4'}
-  - BRI DEC
+  - {t: BT, h: '2'}
   - ''
+  - BRI DEC
+  - BT CLR
   - VOL DN
   - PREV
   - {t: ESC, h: left, type: held}
