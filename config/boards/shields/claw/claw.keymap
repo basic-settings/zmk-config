@@ -49,13 +49,13 @@
 		td_c: tap_dance_c {
 			    compatible = "zmk,behavior-tap-dance";
 			    #binding-cells = <0>;
-			    tapping-term-ms = <200>;
+			    tapping-term-ms = <175>;
 			    bindings = <&kp C>, <&kp C>, <&ma_c>;
 			};
 		td_v: tap_dance_v {
 			    compatible = "zmk,behavior-tap-dance";
 			    #binding-cells = <0>;
-			    tapping-term-ms = <200>;
+			    tapping-term-ms = <175>;
 			    bindings = <&kp V>, <&kp V>, <&ma_v>;
 			};
 	};
