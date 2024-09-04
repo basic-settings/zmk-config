@@ -5,10 +5,11 @@
 // Home row mods macro
 #define HRMR(k1, k2, k3, k4) &mt RSHIFT k1  &mt RCTRL k2  &mt RALT k3 &mt RGUI k4
 
-#define MAC 0
+#define DEFAULT 0
 #define RIG 1
 #define LEF 2
 #define TRI 3
+#define GAME 4
 
 / {
 
@@ -34,6 +35,19 @@
                             ;
                 };
 	};
+	 combos {
+        	compatible = "zmk,combos";
+        	combo_gamemode {
+            		timeout-ms = <50>;
+            		key-positions = <0 1 8 9>;
+            		bindings = <&tog GAME>;
+        	};
+        	combo_default {
+            		timeout-ms = <50>;
+            		key-positions = <0 1 7 8>;
+            		bindings = <&tog DEFAULT>;
+        	};
+    };
 
 	behaviors {
 		ht: hold_tap_balanced {
@@ -58,6 +72,7 @@
 			    tapping-term-ms = <175>;
 			    bindings = <&kp V>, <&kp V>, <&ma_v>;
 			};
+
 	};
 
 	conditional_layers {
@@ -106,5 +121,17 @@
 					&lt LEF ESC	&kp SPACE	&kp TAB			&kp ENTER	&kp BSPC	&lt RIG DEL
 				>;
 		};
+
+		game_layer {
+			bindings = <
+
+	&kp Q		&kp W		&kp E		&kp R		&kp T		&kp Y		&kp U		&kp I		&kp O		&kp P
+	&kp A 	&kp S 	&kp D 	&kp F	&kp G		&kp H		&ht RSHIFT J	&ht RCTRL K	&ht RALT L	&ht RGUI SEMI
+	&kp Z		&kp X		&kp C		&kp V		&kp B		&kp N		&kp M		&kp COMMA	&kp DOT		&kp FSLH
+					&lt LEF ESC	&kp SPACE	&kp TAB		&kp ENTER	&kp BSPC	&lt RIG DEL
+				>;
+		};
+
+
 	};
 };
