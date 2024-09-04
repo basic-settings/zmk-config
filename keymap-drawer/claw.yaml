@@ -22,8 +22,8 @@ layers:
   - {t: ;, h: RGUI}
   - Z
   - X
-  - '&td_c'
-  - '&td_v'
+  - C
+  - V
   - B
   - N
   - M
@@ -178,14 +178,12 @@ layers:
   - ','
   - .
   - /
-  - {t: ESC, h: left}
+  - {t: ESC, h: right}
   - SPACE
   - TAB
   - ENTER
   - BSPC
-  - {t: DEL, h: right}
+  - {t: DEL, h: left}
 combos:
 - p: [0, 1, 8, 9]
   k: {t: game, h: toggle}
-- p: [0, 1, 7, 8]
-  k: {t: default, h: toggle}
