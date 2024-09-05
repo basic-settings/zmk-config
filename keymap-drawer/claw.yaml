@@ -22,8 +22,45 @@ layers:
   - {t: ;, h: RGUI}
   - Z
   - X
-  - '&td_c'
-  - '&td_v'
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ESC, h: left}
+  - SPACE
+  - TAB
+  - ENTER
+  - BSPC
+  - {t: DEL, h: right}
+  game:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - {t: J, h: RSHIFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RALT}
+  - {t: ;, h: RGUI}
+  - Z
+  - X
+  - C
+  - V
   - B
   - N
   - M
@@ -147,3 +184,6 @@ layers:
   - ENTER
   - BSPC
   - {t: DEL, h: right, type: held}
+combos:
+- p: [0, 1, 8, 9]
+  k: {t: game, h: toggle}
