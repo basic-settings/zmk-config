@@ -58,6 +58,16 @@
 				>;
 		};
 
+		game_layer {
+			bindings = <
+
+	&kp Q		&kp W		&kp E		&kp R		&kp T		&kp Y		&kp U		&kp I		&kp O		&kp P
+	&kp A 	&kp S 	&kp D 	&kp F	&kp G		&kp H		&ht RSHIFT J	&ht RCTRL K	&ht RALT L	&ht RGUI SEMI
+	&kp Z		&kp X		&kp C		&kp V		&kp B		&kp N		&kp M		&kp COMMA	&kp DOT		&kp FSLH
+					&lt LEF ESC	&kp SPACE	&kp TAB		&kp ENTER	&kp BSPC	&lt RIG DEL
+				>;
+		};
+
 		right_layer {
 			bindings = <
 	&kp N1	&kp N2	&kp N3		&kp N4		&kp N5		&kp C_MUTE	&kp C_PREV	&kp UARW	&kp C_PP	&kp C_NEXT
@@ -84,17 +94,6 @@
 					&lt LEF ESC	&kp SPACE	&kp TAB			&kp ENTER	&kp BSPC	&lt RIG DEL
 				>;
 		};
-
-		game_layer {
-			bindings = <
-
-	&kp Q		&kp W		&kp E		&kp R		&kp T		&kp Y		&kp U		&kp I		&kp O		&kp P
-	&kp A 	&kp S 	&kp D 	&kp F	&kp G		&kp H		&ht RSHIFT J	&ht RCTRL K	&ht RALT L	&ht RGUI SEMI
-	&kp Z		&kp X		&kp C		&kp V		&kp B		&kp N		&kp M		&kp COMMA	&kp DOT		&kp FSLH
-					&lt LEF ESC	&kp SPACE	&kp TAB		&kp ENTER	&kp BSPC	&lt RIG DEL
-				>;
-		};
-
 
 	};
 };
