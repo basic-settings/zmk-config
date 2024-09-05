@@ -30,12 +30,12 @@ layers:
   - ','
   - .
   - /
-  - {t: ESC, h: left}
+  - {t: ESC, h: tri}
   - SPACE
   - TAB
   - ENTER
   - BSPC
-  - {t: DEL, h: right}
+  - {t: DEL, h: left}
   right:
   - '1'
   - '2'
@@ -67,12 +67,12 @@ layers:
   - VOL UP
   - END
   - PG DN
-  - {t: ESC, h: left}
+  - {t: ESC, h: tri}
   - SPACE
   - TAB
   - ENTER
   - BSPC
-  - {t: DEL, h: right, type: held}
+  - {t: DEL, h: left}
   left:
   - '!'
   - '@'
@@ -104,12 +104,12 @@ layers:
   - $
   - '&'
   - '?'
-  - {t: ESC, h: left, type: held}
+  - {t: ESC, h: tri}
   - SPACE
   - TAB
   - ENTER
   - BSPC
-  - {t: DEL, h: right}
+  - {t: DEL, h: left, type: held}
   tri:
   - F1
   - F2
@@ -141,12 +141,12 @@ layers:
   - BT CLR
   - VOL DN
   - PREV
-  - {t: ESC, h: left, type: held}
+  - {t: ESC, h: tri, type: held}
   - SPACE
   - TAB
   - ENTER
   - BSPC
-  - {t: DEL, h: right, type: held}
+  - {t: DEL, h: left}
   game:
   - Q
   - W
@@ -178,12 +178,12 @@ layers:
   - ','
   - .
   - /
-  - {t: ESC, h: right}
+  - {t: ESC, h: tri, type: held}
   - SPACE
   - TAB
   - ENTER
   - BSPC
-  - {t: DEL, h: left}
+  - {t: DEL, h: left, type: held}
 combos:
 - p: [0, 1, 8, 9]
-  k: {t: game, h: toggle}
+  k: {t: right, h: toggle}
