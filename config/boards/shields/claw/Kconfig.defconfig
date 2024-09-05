@@ -1,6 +1,12 @@
 config ZMK_BATTERY_REPORT_INTERVAL
 	default	600
 
+config ZMK_SLEEP
+	default y
+
+config ZMK_IDLE_SLEEP_TIMEOUT
+	default 900000
+
 if SHIELD_CLAW_LEFT
 
 config ZMK_KEYBOARD_NAME
