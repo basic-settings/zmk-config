@@ -154,7 +154,7 @@ layers:
   - F4
   - {t: BT, h: '0'}
   - {t: BT, h: '3'}
-  - SLEEP
+  - OUT TOG
   - ''
   - MUTE
   - NEXT
